@@ -4,8 +4,8 @@
 }
 
 .Upper {
-    height: 700px;
-    background-color: rgb(60, 160, 160);
+    height: 655px;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     background-image: url("image/145064.jpg");
 }
@@ -18,7 +18,7 @@
 }
 
 .Upper ul li {
-    float: left;
+    float: right;
 }
 
 .Upper ul li a {
@@ -34,34 +34,128 @@
     background-color: rgb(111, 202, 50);
 }
 
-.Upper h5 {
+
+/* Send A message start */
+
+.SendMess {
+    /* background-color: red; */
+    width: 30%;
+    margin-left: 17%;
+    float: left;
+}
+
+.SendMess h5 {
     margin-top: 50px;
-    margin-left: 150px;
     /* text-align: center; */
     font-size: 30px;
     font-family: Lobster;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
-.Upper form {
-    margin-left: 150px;
-    margin-top: 30px;
+.SendMess form {
+    margin-top: 15px;
+}
+
+.SendMess form textarea {
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
 }
 
 input[type=submit] {
     background-color: #4CAF50;
     border: none;
     color: white;
+    font-size: 15px;
     padding: 16px 32px;
     text-decoration: none;
-    margin: 10px 2px 4px 890px;
+    margin: 20px 2px 4px 0px;
+    width: 150px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
+
+/* Contact info start */
+
+.Contactmessage {
+    width: 30%;
+    height: 500px;
+    /* background-color: rgb(60, 160, 160); */
+    float: left;
+}
+
+.Contactmessage h5 {
+    color: black;
+    font-size: 30px;
+    margin: 50px 0 40px 50px;
+}
+
+.Contactmessage p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 20px 0 40px 50px;
+}
+
+.Contactmessage h6 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 10px 0 40px 50px;
+}
+
+.Contactmessage ul a {
+    float: left;
+    margin: 10px 0 40px 50px;
+}
+
+
+/* footer start */
+
 .footer {
-    height: 50px;
+    height: 20px;
+    /* background-color: rgb(94, 129, 24, 0.6); */
+    /* background-color: rgb(96, 150, 35); */
+    /* background-color: rgb(62, 90, 50); */
     background-color: rgb(62, 90, 50);
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding-top: 40px;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.footer img {
+    float: left;
+    padding-left: 18%;
+    width: 100px;
+}
+
+.footer p {
+    float: left;
+    padding-left: 14%;
+    padding-top: 12px;
+}
+
+.footer ul {
+    float: right;
+    padding-right: 15%;
+}
+
+.footer ul a {
+    float: left;
+    display: block;
+    color: rgb(63, 50, 50);
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    background-color: rgb(111, 202, 50);
+}
+
+.footer ul a img {
+    height: 30px;
+    width: 30px;
 }

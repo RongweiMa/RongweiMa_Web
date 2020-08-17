@@ -10,22 +10,73 @@
 
 <body>
     <div class="Upper">
-        <ul>
-            <li><a href="mainpage.html" class="w3-bar-item w3-button">Home</a></li>
-            <li><a href="mainpage.html#details" class="w3-bar-item w3-button">About</a></li>
-            <li><a href="#" class="w3-bar-item w3-button">Contact</a></li>
+        <ul class="nav">
+            <li><a href="Contact.html" class="w3-bar-item w3-button">Contact</a></li>
+            <li><a href="background.html" class="w3-bar-item w3-button">Background</a></li>
+            <li><a href="index.html#row" class="w3-bar-item w3-button">Protfolio</a></li>
+            <li><a href="index.html#details" class="w3-bar-item w3-button">About Me</a></li>
+            <li><a href="index.html" class="w3-bar-item w3-button">Home</a></li>
         </ul>
-        <h5>Leave a message for Rongwei or contact by email</h5>
-        <form>
-            <textarea name="message" style="width:1000px; height:300px;">Please enter your text here</textarea>
-            <br>
-            <input type="submit" onclick="alert('Thank you, message submitted!')">
-        </form>
+
+        <div class="SendMess">
+            <h5>Send A Message</h5>
+            <form>
+                <textarea placeholder="Your Full name" style="width:400px; height:30px;"></textarea><br>
+                <textarea placeholder="Your Email Address" style="width:400px; height:30px;"></textarea><br>
+                <textarea placeholder="Write Your Message" style="width:400px; height:200px;"></textarea><br>
+                <input type="submit" onclick="alert('Thank you, message submitted!')">
+            </form>
+        </div>
+
+        <div class="Contactmessage">
+            <h5>Get In Touch</h5>
+            <p>Thank you for visiting my website and it great if you would like to leave a message for me. Below are my contact Information
+            </p>
+            <h6> Email: ma_rongwei@hotmail.com </h6>
+
+            <ul class="social-icons">
+                <a href="https://www.linkedin.com/in/rongwei-ma-12551894/" style="text-decoration: none;">
+                    <img src="image/linkedin.png" height="30" width="30">
+                </a>
+                <a href="https://github.com/RongweiMa" style="text-decoration: none;">
+                    <img src="image/logo.png" height="30" width="30">
+                </a>
+            </ul>
+        </div>
+
+
     </div>
 
+
+
     <div class="footer">
-        <p>Copyright @ Rongwei Ma</p>
+        <img src="image/Mylogo.png">
+        <p>Copyright @ Rongwei Ma 2020, All right reserved</p>
+        <ul class="social-icons">
+            <a href="mailto: abc@example.com" style="text-decoration: none;">
+                <img src="image/mail.png">
+            </a>
+            <a href="https://www.linkedin.com/in/rongwei-ma-12551894/" style="text-decoration: none;">
+                <img src="image/linkedin.png">
+            </a>
+            <a href="https://github.com/RongweiMa" style="text-decoration: none;">
+                <img src="image/logo.png">
+            </a>
+        </ul>
     </div>
+
+    <script>
+        const nav = document.querySelector(".nav")
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY)
+            if (window.scrollY > 0.3) {
+                // nav.style.backgroundColor = " rgb(180, 196, 147)"
+                nav.style.backgroundColor = " rgb(95, 136, 77)"
+            } else {
+                nav.style.backgroundColor = ""
+            }
+        })
+    </script>
 </body>
 
 </html>

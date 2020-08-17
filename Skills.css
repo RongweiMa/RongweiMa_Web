@@ -4,24 +4,30 @@
 }
 
 .Upper {
-    height: 200px;
+    height: 2150px;
     background-image: url("image/145064.jpg");
 }
 
-.Upper ul {
+.nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: fixed;
+    min-width: 100%;
+    /* whole bar */
+    /* background-color: #B9E0CB; */
+    display: block;
+    transition: 0.3s;
+    /* padding-left: 15%; */
+    z-index: 1;
 }
 
 .Upper ul li {
-    float: left;
+    float: right;
 }
 
 .Upper ul li a {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -32,27 +38,31 @@
     background-color: rgb(111, 202, 50);
 }
 
-.Upper h5 {
-    margin-top: 70px;
-    margin-left: 100px;
+.h5h h5 {
+    padding: 80px 30px 30px 250px;
     /* text-align: center; */
-    font-size: 40px;
-    font-family: Lobster;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
 
+.background {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
 .wrapper {
-    margin: 40px 250px;
+    margin: 0;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: [col] 25% [col] 25% [col] 25% [col] 25%;
     grid-template-rows: [row] auto [row] auto [row];
-    background-color: #fff;
     color: #444;
 }
 
 .box {
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-radius: 5px;
     padding: 20px;
@@ -68,12 +78,15 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin: 70px 0 0 100px;
+    text-align: center;
+    box-shadow: 5px 5px #888888;
 }
 
 .b {
     grid-column: col 2/ span 3;
     grid-row: row;
-    padding-top: 50px;
+    padding: 80px 100px;
 }
 
 .b p {
@@ -88,23 +101,40 @@
 .d {
     grid-column: col / span 2;
     grid-row: row 3;
+    padding-left: 150px;
+}
+
+.d p {
+    font-size: 20px;
 }
 
 .e {
     grid-column: col 3/ span 2;
     grid-row: row 3;
+    padding-right: 150px;
+}
+
+.e p {
+    font-size: 20px;
 }
 
 
 /* skill bar */
 
-.container {
-    width: 100%;
-    background-color: #ddd;
+.cover {
+    margin-top: 20px;
 }
 
-h5 {
-    padding-bottom: 30px;
+.container {
+    width: 350px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+}
+
+.d h5 {
+    padding-bottom: 0px;
+    font-size: 25px;
 }
 
 .skills {
@@ -116,34 +146,45 @@ h5 {
 
 .html {
     width: 90%;
+    height: 10px;
     background-color: #4CAF50;
+    border-radius: 30px;
 }
 
 .css {
-    width: 80%;
+    width: 70%;
+    height: 10px;
     background-color: #2196F3;
+    border-radius: 30px;
 }
 
 .js {
-    width: 65%;
+    width: 85%;
+    height: 10px;
     background-color: #f44336;
+    border-radius: 30px;
 }
 
 .php {
-    width: 60%;
+    width: 70%;
+    height: 10px;
     background-color: #808080;
+    border-radius: 30px;
 }
 
 
 /* right skill bar */
 
 .container1 {
-    width: 100%;
+    width: 350px;
+    height: 30px;
     background-color: #ddd;
+    border-radius: 30px;
 }
 
-h5 {
-    padding-bottom: 30px;
+.e h5 {
+    padding-bottom: 5px;
+    font-size: 25px;
 }
 
 .skills1 {
@@ -155,31 +196,272 @@ h5 {
 
 .html1 {
     width: 90%;
+    height: 10px;
     background-color: #4CAF50;
+    border-radius: 30px;
 }
 
 .css1 {
     width: 80%;
+    height: 10px;
     background-color: #2196F3;
+    border-radius: 30px;
 }
 
 .js1 {
     width: 85%;
+    height: 10px;
     background-color: #f44336;
+    border-radius: 30px;
 }
 
 .php1 {
-    width: 60%;
+    width: 80%;
+    height: 10px;
     background-color: #808080;
+    border-radius: 30px;
 }
 
 
-/* footer */
+/* skillbar finish */
+
+
+/* Create three equal columns that floats next to each other */
+
+.row {
+    margin-left: 10%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.row h4 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.column {
+    float: left;
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 20px;
+    /* border-color: blue;
+    border: 2px;
+    border-style: solid;
+    box-shadow: 5px 5px #888888; */
+}
+
+.column img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.column img:hover {
+    top: -15px;
+}
+
+.column h2 {
+    padding-top: 30px;
+}
+
+.column p {
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+/* three columns end */
+
+
+/* language start */
+
+.language {
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.language h5 {
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+
+.skills2 {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.Chinese {
+    width: 100%;
+    background-color: #4CAF50;
+}
+
+.English {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+.Finnish {
+    width: 35%;
+    background-color: #f44336;
+}
+
+
+/* language end */
+
+
+/* driving start */
+
+.driving {
+    margin: 50px 0;
+}
+
+.driving h5 {
+    font-size: 25px;
+    margin: 10px 0;
+    margin-left: 15%;
+}
+
+.driving img {
+    width: 60px;
+    height: 60px;
+    margin-left: 15%;
+}
+
+
+/* four columns start */
+
+
+/* Create three equal columns that floats next to each other */
+
+.row2 {
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+.row2 h4 {
+    font-size: 25px;
+    margin: 30px 0 0 0;
+}
+
+.column2 {
+    float: left;
+    width: 17%;
+    height: 200px;
+    padding: 20px 20px 0px 5px;
+    margin: 10px 10px 50px 0;
+    /* border: rgb(158, 30, 16); */
+    /* border-style: solid;
+    border-width: 1px; */
+    background-color: white;
+    border-radius: 10px;
+}
+
+.column2 h2 {
+    font-size: 20px;
+}
+
+.column2 p {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+/* Clear floats after the columns */
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .column2 {
+        width: 100%;
+    }
+}
+
+
+/* four columns end */
+
+
+/* footer start */
 
 .footer {
-    height: 100px;
-    background-color: #5D6479;
-    color: rgb(255, 255, 255);
+    height: 25px;
+    /* background-color: rgb(94, 129, 24, 0.6); */
+    /* background-color: rgb(96, 150, 35); */
+    /* background-color: rgb(62, 90, 50); */
+    /* background-color: rgb(95, 136, 77); */
+    background-color: rgb(62, 90, 50);
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 10px;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.footer img {
+    float: left;
+    padding-left: 18%;
+    width: 100px;
+}
+
+.footer p {
+    float: left;
+    padding-left: 14%;
+    padding-top: 12px;
+}
+
+.footer ul {
+    float: right;
+    padding-right: 15%;
+}
+
+.footer ul a {
+    float: left;
+    display: block;
+    color: rgb(63, 50, 50);
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    background-color: rgb(111, 202, 50);
+}
+
+.footer ul a img {
+    height: 30px;
+    width: 30px;
 }

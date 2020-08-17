@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rongwei's Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+</head>
+
+
+<body>
+
+    <div class="Upper">
+        <div class="mylogo">
+            <!-- <img src="image/Mylogo.png"> -->
+        </div>
+        <ul class="nav">
+            <li><a href="Contact.html" class="w3-bar-item w3-button">Contact</a></li>
+            <li><a href="background.html" class="w3-bar-item w3-button">Background</a></li>
+            <li><a href="#row" class="w3-bar-item w3-button">Protfolio</a></li>
+            <li><a href="#details" class="w3-bar-item w3-button">About Me</a></li>
+            <li><a href="index.html" class="w3-bar-item w3-button">Home</a></li>
+        </ul>
+        <dive class="inner">
+            <dive class="maintext">
+                <h5>Welcome to Rongwei's web</h5>
+                <h4>I hope you enjoy the journey. </h4>
+            </dive>
+            <!-- <h4>Software Engineering & Automation Engineering </h4> -->
+            <img src="image/me.png">
+        </dive>
+    </div>
+
+    <div id="details">
+        <img src="image/meid.jpg">
+        <h2>About Me</h2>
+        <p>Hi! Thank you for visiting Rongwei's website. This website was fully designed and developed by Rongwei Ma as a profile introducing more about her including her skills, projects, work experiences and education background. The "Home" page generally
+            shows the sections you can access. In the "About Me" page, it expresses my professional skills and hobbies. "Protflio" presents the projects Rongwei had done and the projects got adwards. The last section "Background" providing the Work experience
+            and education information. The Linkedin page and github page links can be found in footer. If you have any suggestions or get interested in any content, welcome to contact me through the contact page. If you would like to know more, please
+            reach the buttom "Read More".
+        </p>
+        <a href="Skills.html"><button>Read more</button></a>
+    </div>
+
+    <div id="row">
+        <div class="prot">
+            <h3>My Protfolio</h3> <br>
+            <div class="column">
+                <a href="Project.html">
+                    <img src="image/AI.png">
+                    <!-- image reference : https://www.netclipart.com/isee/hJoRRT_basic-techniques-every-primary-and-secondary-data/ -->
+                </a>
+                <h2>Data Development</h2>
+                <p> Data Anlysis and Machine learning relavant projects and competitions.
+                </p>
+
+            </div>
+
+            <div class="column">
+                <a href="Project1.html">
+                    <img src="image/2.jpg">
+                </a>
+                <h2>Robotics & Automation</h2>
+                <p>Robotics and Automation related projects.
+                </p>
+            </div>
+
+            <div class="column">
+                <a href="Work.html">
+                    <img src="image/3.jpg">
+                </a>
+                <h2>Web Development</h2>
+                <p>Website development.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <img src="image/Mylogo.png">
+        <p>Copyright @ Rongwei Ma 2020, All right reserved</p>
+        <ul class="social-icons">
+            <a href="mailto: abc@example.com" style="text-decoration: none;">
+                <img src="image/mail.png">
+            </a>
+            <a href="https://www.linkedin.com/in/rongwei-ma-12551894/" style="text-decoration: none;">
+                <img src="image/linkedin.png">
+            </a>
+            <a href="https://github.com/RongweiMa" style="text-decoration: none;">
+                <img src="image/logo.png">
+            </a>
+        </ul>
+    </div>
+
+    <script>
+        const nav = document.querySelector(".nav")
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY)
+            if (window.scrollY > 0.3) {
+                // nav.style.backgroundColor = " rgb(180, 196, 147)"
+                nav.style.backgroundColor = " rgb(95, 136, 77)"
+            } else {
+                nav.style.backgroundColor = ""
+            }
+        })
+    </script>
+</body>
+
+</html>

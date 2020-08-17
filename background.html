@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rongwei's Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="background.css">
+</head>
+
+
+<body>
+
+    <!-- header start -->
+    <div class="Upper">
+        <ul class="nav">
+            <li><a href="Contact.html" class="w3-bar-item w3-button">Contact</a></li>
+            <li><a href="background.html" class="w3-bar-item w3-button">Background</a></li>
+            <li><a href="index.html#row" class="w3-bar-item w3-button">Protfolio</a></li>
+            <li><a href="index.html#details" class="w3-bar-item w3-button">About Me</a></li>
+            <li><a href="index.html" class="w3-bar-item w3-button">Home</a></li>
+        </ul>
+        <h5>Work experience and Education</h5>
+
+        <!-- timelin start -->
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h3>2019 Software Engineering <br>Sandvik mining and construction Oy</h3>
+                    <p>- PLC programming with Codesys IEC 61131-3 <br>- Programming with CAN protocol <br>- Learning programming for GUI sides by C++ <br>- Understanding the mechanical principles for mining equipment</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>2018 Application Engineering <br> Visual Components Oy (Kuka)</h3>
+                    <p>- Solving software questions and provide technical solutions (Python) for customers <br>- Testing updating version <br>- Modeling 3D components to the software environment <br>- Reporting and examining bug ticket</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h3>2016 Automation and Electrical Engineering (Master degree) <br> Aalto University</h3>
+                    <p>- Major in "Control, Robotics and Autonomous Systems": <br>Machine learning principles, Artificial Intelligent, Computer Vision, Introduction to robotics and automation, Web design, Embedded Real-Time Systems, Modelling, estimation
+                        and dynamic and relavant courses.
+                        <br>- Minor in "International Business and Management": Project Management, Organisations and Leadership, Strategy and Marketing from a Business History Perspective, Integrated Marketing Communications.</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>2013 Mechanical Engineering <br>(Bachelor Degree) <br> VIA University College, Horsens (Denmark)</h3>
+                    <p>Renewable Energy, Thermodynamics, Drive, Automatic Control, Material and Design, Designing in 3D-CAD, Innovation and Product design, Robotics, Experiments and relavant courses.</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h3>2013 Summer Internship Horsmalahti Oy </h3>
+                    <p>- Redesign the website <br>- CNC Operator <br>- Making researches for purchasing cutting tools</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>2011 Automation Engineering <br>(Bachelor Degree)</h3>
+                    <p>- Major in "Automation and Electrical Engineering": Computer skills, Mathematics, Physics, Basic Programming, Control Engineering, Electrical Engineering, Maintenance, Measurement technology, Instrumentation, Human-Machine Interface,
+                        Robotics, Pneumatic and Hydraulics,Programmable Logic Controllers, 2D-CAD Drawing, Measurement Technology, Entrepreneurship, Computer skills, Machine Vision, Electronics, Business Economics, Market Entry Project, English, Finnish.</p>
+                </div>
+            </div>
+        </div>
+        <!-- timeline end -->
+    </div>
+    <!-- header end -->
+
+
+    <div class="footer">
+        <img src="image/Mylogo.png">
+        <p>Copyright @ Rongwei Ma 2020, All right reserved</p>
+        <ul class="social-icons">
+            <a href="mailto: abc@example.com" style="text-decoration: none;">
+                <img src="image/mail.png">
+            </a>
+            <a href="https://www.linkedin.com/in/rongwei-ma-12551894/" style="text-decoration: none;">
+                <img src="image/linkedin.png">
+            </a>
+            <a href="https://github.com/RongweiMa" style="text-decoration: none;">
+                <img src="image/logo.png">
+            </a>
+        </ul>
+    </div>
+
+    <script>
+        const nav = document.querySelector(".nav")
+        window.addEventListener('scroll', () => {
+            console.log(window.scrollY)
+            if (window.scrollY > 0.3) {
+                // nav.style.backgroundColor = " rgb(180, 196, 147)"
+                nav.style.backgroundColor = " rgb(95, 136, 77)"
+            } else {
+                nav.style.backgroundColor = ""
+            }
+        })
+    </script>
+</body>
+
+</html>

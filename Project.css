@@ -81,6 +81,7 @@
 .title {
     font-size: 30px;
     width: 500px;
+    padding-top: 30px;
 }
 
 .checked {
